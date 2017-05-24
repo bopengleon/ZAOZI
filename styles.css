@@ -32,3 +32,42 @@ a, u {
     text-decoration: none;
     color:black;
 }
+
+.container{
+	width: 90%;
+	margin:auto;
+}
+
+.tag{
+font-family: NoeDisplay-Bold;
+font-size: 20px;
+color: #B8B8B8;
+line-height: 30px;
+}
+
+strong{
+    color:#FF0000;
+}
+
+#boxes {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  width:585px;
+  height:400px;
+  float :left;
+}
+
+
+.box:hover{
+    border: 1px solid #ff0000;
+}
