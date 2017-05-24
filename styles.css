@@ -62,12 +62,18 @@ strong{
   
   -webkit-flex-flow: row wrap;
   justify-content: flex-start;
-  width:585px;
+  width:413px;
   height:400px;
   float :left;
 }
+.box{
+    border: 1px solid #D0D0D0; height: 98px;width: 98px;
+}
+.charac{
+    width: 90px;
 
-
+}
 .box:hover{
     border: 1px solid #ff0000;
+
 }

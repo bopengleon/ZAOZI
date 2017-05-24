@@ -1736,11 +1736,23 @@ document.getElementById("tag")
 
 function myFunction(){
 	var tag=document.getElementById("tag").value;
-	if (tag in tags)
-		 alert("tag found");
-	else 
-		alert("not found");
+	// if (tag in tags)
+	// 	 alert("tag found");
+	// else 
+	// 	alert("not found");
 
-	alert (tag);
+	// alert (tags[tag]);
+	var head = "./assets/componentsvg/";
+	var boxes = document.getElementById("boxes");
+	for(var i=0;i<12;i++){
+		var box = document.createElement("div");
+		var svg = document.createElement("img");
+			box.className="box";
+	        svg.className = "charac";
+	        svg.src = (head+tags[tag][i]);
+	        // alert(svg.src);
+	        box.appendChild(svg);
+	        boxes.appendChild(box);
+    }
 
 }
