@@ -1723,7 +1723,6 @@ var tags = {
 "256":["256.svg"]
 }
 
-var tag ;
 
 document.getElementById("tag")
     .addEventListener("keyup", function(event) {
@@ -1741,7 +1740,7 @@ function myFunction(){
 		 alert("tag found");
 	else 
 		alert("not found");
-	
+
 	alert (tag);
 
 }
