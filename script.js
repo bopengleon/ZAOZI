@@ -1739,6 +1739,9 @@ function myFunction(){
 	var tag=document.getElementById("tag").value;
 	if (tag in tags)
 		 alert("tag found");
+	else 
+		alert("not found");
+	
 	alert (tag);
 
 }
