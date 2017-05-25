@@ -1730,7 +1730,7 @@ document.getElementById("tag")
     if (event.keyCode == 13) {
     	tag= document.getElementById("tag").value;
         document.getElementById("tag").click();
-         document.getElementById("demo").innerHTML = x;
+        
     }
 });
 
@@ -1744,15 +1744,25 @@ function myFunction(){
 	// alert (tags[tag]);
 	var head = "./assets/componentsvg/";
 	var boxes = document.getElementById("boxes");
-	for(var i=0;i<tags[tag].length;i++){
-		var box = document.createElement("div");
-		var svg = document.createElement("img");
-			box.className="box";
-	        svg.className = "charac";
-	        svg.src = (head+tags[tag][i]);
-	        // alert(svg.src);
-	        box.appendChild(svg);
-	        boxes.appendChild(box);
-    }
+	var prompt = document.getElementsByClassName("prompt");
+	
+
+	if(tags[tag].length>0){	
+	 // prompt.style.display="none";
+		for(var i=0;i<tags[tag].length;i++){
+			var box = document.createElement("div");
+			var svg = document.createElement("img");
+				box.id=tags[tag][i].substring(0,3);
+				box.className="box";
+		        svg.className = "charac";
+		        svg.src = (head+tags[tag][i]);
+		        // alert(svg.src);
+		        box.appendChild(svg);
+		        boxes.appendChild(box);
+	    }
+	} else {
+	}
+
+
 
 }
