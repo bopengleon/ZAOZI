@@ -1744,7 +1744,7 @@ function myFunction(){
 	// alert (tags[tag]);
 	var head = "./assets/componentsvg/";
 	var boxes = document.getElementById("boxes");
-	for(var i=0;i<12;i++){
+	for(var i=0;i<tags[tag].length;i++){
 		var box = document.createElement("div");
 		var svg = document.createElement("img");
 			box.className="box";
